@@ -8,3 +8,6 @@ vim.cmd([[
   highlight Normal ctermbg=none
   highlight NonText ctermbg=none
 ]])
+
+-- Set word wrap
+vim.o.wrap = true
