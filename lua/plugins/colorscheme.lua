@@ -1,11 +1,10 @@
 return {
   {
-    "dracula/vim",
-    lazy = false, -- load immediately
-    priority = 1000, -- load before other plugins
+    "scottmckendry/cyberdream.nvim",
+    lazy = false, -- Load on startup
+    priority = 1000, -- Ensure it loads before other plugins
     config = function()
-      vim.o.background = "dark"
-      vim.cmd.colorscheme("dracula")
+      vim.cmd.colorscheme("cyberdream") -- Apply the colorscheme
     end,
   },
 }
