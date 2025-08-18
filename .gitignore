@@ -1,8 +1,85 @@
-tt.*
-.tests
-doc/tags
-debug
-.repro
-foo.*
+# Plugin installation directory (if using lazy.nvim)
+/lua/plugins/installed/
+
+# Neovim runtime files
+.netrwhist
+.nvimlog
+nvim.log
+
+# Session files
+Session.vim
+.session
+*.vim.session
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~
+
+# Undo files (if not using a specific undo directory)
+*.un~
+
+# Backup files
+*.bak
+*.backup
+
+# LazyVim specific
+.lazy/
+
+# Plugin manager lock files
+lazy-lock.json     
+Lazy.nvim
+
+# Local configuration (machine-specific)
+lua/config/local.lua
+lua/local.lua
+local.lua
+
+# LSP and Mason installations
+mason/
+.mason/
+
+# Copilot authentication (if using copilot)
+copilot/
+.copilot
+
+# Debugger configurations (machine-specific)
+.vscode/
+dap/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+*.iml
+
+# Custom user configurations that shouldn't be shared
+user.lua
+private.lua
+secret.lua
+
+# Database files (if using any local DBs for plugins)
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
 *.log
-data
+logs/
+
+# Cache directories
+.cache/
+cache/
+
+# Compiled lua files (rare, but possible)
+*.luac
+
+# Plugin specific data directories
+telescope_history
+harpoon.json
+
+# Language server installations (if not using Mason)
+.lsp/
