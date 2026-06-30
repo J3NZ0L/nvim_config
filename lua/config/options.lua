@@ -11,3 +11,8 @@ vim.opt.expandtab = true
 -- Set ripgrep to ignore .obsidian folder
 
 vim.opt.wildignore:append({ "*/.obsidian/*" })
+
+-- Let Neovim know how to open web links from WSL inside Windows
+if vim.fn.has("wsl") == 1 then
+    vim.g.netrw_browsex_viewer = "wsl-open" -- or "wslview"
+end
